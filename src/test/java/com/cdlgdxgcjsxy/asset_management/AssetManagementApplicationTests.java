@@ -10,4 +10,9 @@ class AssetManagementApplicationTests {
     void contextLoads() {
     }
 
+    @Test
+    void sayHello(){
+        System.out.println("hello world!!!");
+    }
+
 }
