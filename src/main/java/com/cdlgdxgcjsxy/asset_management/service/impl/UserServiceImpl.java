@@ -15,4 +15,14 @@ public class UserServiceImpl implements UserService {
         User user = userMapper.selectById(id);
         return user;
     }
+
+    @Override
+    public Integer insertUser(User user) {
+        return userMapper.insertUser(user);
+    }
+
+    @Override
+    public User queryUser(User user) {
+        return userMapper.selectByUser(user);
+    }
 }
